@@ -243,59 +243,42 @@ nav a:hover{
 }
 
 .hero-text h1{
-font-size:38px;
+    font-size:38px;
+}
+
+.menu-toggle{
+    display:block;
 }
 
 nav{
-display:none;
+    display:none;
+    position:absolute;
+    top:95px;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    padding:20px;
+    gap:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+nav.active{
+    display:flex;
 }
 
 .hero-buttons{
-justify-content:center;
-flex-wrap:wrap;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
-    .product-card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-    border-radius:12px;
-    margin-bottom:20px;
 }
 
-.product-card h3{
-    margin-bottom:12px;
-    font-size:24px;
-}
-
-.product-card p{
-    color:#666;
-    margin-bottom:25px;
-    min-height:80px;
-}
-
-.product-card .btn{
-    width:100%;
-}
-
-    .card{
-    border:1px solid #ececec;
-}
-
-.card h3{
-    margin:15px 0;
-    font-size:24px;
-}
-
-.card p{
-    color:#666;
-}
-
-.card i{
-    font-size:48px;
-    color:#0f6f73;
-}
-    
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#222;
 }
 
 /* Category Images */
