@@ -280,5 +280,22 @@ flex-wrap:wrap;
     font-size:48px;
     color:#0f6f73;
 }
+
+.category-grid .card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.category-grid .card:hover img{
+    transform:scale(1.05);
+}
+
+.category-grid .card{
+    overflow:hidden;
+}
     
 }
