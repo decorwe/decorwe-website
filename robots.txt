@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://decorwe.in/sitemap.xml
