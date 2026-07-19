@@ -61,6 +61,8 @@ nav a:hover{
 
 .hero{
     padding:50px 0 70px;
+    background:linear-gradient(135deg,#f8fcfb 0%,#edf7f6 100%);
+    border-top:1px solid #eef2f3;
 }
 
 .hero-content{
