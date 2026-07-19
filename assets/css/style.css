@@ -154,7 +154,9 @@ nav a:hover{
 }
 
 .category-grid{
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
 }
 
 .card,
@@ -280,6 +282,10 @@ flex-wrap:wrap;
     font-size:48px;
     color:#0f6f73;
 }
+    
+}
+
+/* Category Images */
 
 .category-grid .card img{
     width:100%;
@@ -296,6 +302,4 @@ flex-wrap:wrap;
 
 .category-grid .card{
     overflow:hidden;
-}
-    
 }
