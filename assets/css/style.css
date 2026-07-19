@@ -262,5 +262,23 @@ flex-wrap:wrap;
 .product-card .btn{
     width:100%;
 }
+
+    .card{
+    border:1px solid #ececec;
+}
+
+.card h3{
+    margin:15px 0;
+    font-size:24px;
+}
+
+.card p{
+    color:#666;
+}
+
+.card i{
+    font-size:48px;
+    color:#0f6f73;
+}
     
 }
