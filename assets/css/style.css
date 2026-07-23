@@ -27,7 +27,7 @@ body{
 
 .top-announcement{
     width:100%;
-    background:#f3f8f8;
+    background:#f8fbfb;
     border-bottom:1px solid #e3eeee;
 }
 
@@ -39,7 +39,7 @@ body{
     justify-content:center;
     gap:14px;
     color:#364647;
-    font-size:12px;
+    font-size:13px;
     font-weight:500;
     letter-spacing:.2px;
     line-height:1.2;
@@ -54,7 +54,7 @@ body{
 
 .top-announcement-inner i{
     color:#087f86;
-    font-size:11px;
+    font-size:12px;
 }
 
 .top-divider{
