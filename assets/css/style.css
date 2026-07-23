@@ -21,46 +21,47 @@ body{
     margin:auto;
 
 
-    /* =========================
-   Announcement Bar
+/* =========================
+   Top Announcement Bar
 ========================= */
 
-.announcement-bar{
+.top-announcement{
     width:100%;
-    min-height:34px;
-    background:#f4f8f8;
-    border-bottom:1px solid #e6eeee;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:6px 20px;
+    background:#f3f8f8;
+    border-bottom:1px solid #e3eeee;
 }
 
-.announcement-content{
+.top-announcement-inner{
+    min-height:34px;
+    padding:6px 20px;
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:12px;
-    color:#3f4b4c;
-    font-size:13px;
+    gap:14px;
+    color:#364647;
+    font-size:12px;
     font-weight:500;
     letter-spacing:.2px;
-    text-align:center;
+    line-height:1.2;
 }
 
-.announcement-content span{
+.top-announcement-inner span{
     display:inline-flex;
     align-items:center;
-    gap:5px;
+    gap:6px;
+    white-space:nowrap;
 }
 
-.announcement-content i{
+.top-announcement-inner i{
     color:#087f86;
-    font-size:12px;
+    font-size:11px;
 }
 
-.announcement-divider{
-    color:#9ba9aa;
+.top-divider{
+    width:1px;
+    height:13px;
+    background:#bac8c9;
+    display:block;
 }
 
 /* Header */
@@ -775,23 +776,23 @@ nav .header-shop-btn{
 
 @media(max-width:600px){
 
-   .announcement-bar{
+ .top-announcement-inner{
     min-height:32px;
-    padding:6px 10px;
-}
-
-.announcement-content{
+    padding:6px 8px;
     gap:7px;
-    font-size:10.5px;
-    letter-spacing:0;
+    font-size:9.5px;
 }
 
-.announcement-content i{
-    font-size:10px;
+.top-announcement-inner span{
+    gap:3px;
 }
 
-.announcement-divider{
+.top-announcement-inner i{
     font-size:9px;
+}
+
+.top-divider{
+    height:11px;
 }
     
     .hero-text h1{
