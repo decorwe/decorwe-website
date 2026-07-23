@@ -522,59 +522,133 @@ nav .header-shop-btn:hover{
     color:#0f6f73;
 }
 
-/* Footer */
+/* =========================
+   Premium Footer
+========================= */
 
-footer{
-    background:#111;
-    color:#fff;
-    padding:70px 0 20px;
+.site-footer{
+    background:#111111;
+    color:#ffffff;
+    padding:70px 0 0;
 }
 
 .footer-grid{
     display:grid;
-    grid-template-columns:2fr 1fr 1fr 1fr;
-    gap:40px;
-    align-items:flex-start;
-}
-
-.footer-grid > div{
-    text-align:left;
+    grid-template-columns:1.7fr 1fr 1fr 1.35fr;
+    gap:55px;
+    align-items:start;
+    padding-bottom:50px;
 }
 
 .footer-logo{
-    width:180px;
+    width:185px;
     height:auto;
     display:block;
     margin-bottom:20px;
 }
 
-footer h3{
-    color:#fff;
-    margin-bottom:20px;
+.footer-brand p{
+    max-width:390px;
+    color:#bcbcbc;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:24px;
 }
 
-footer p{
-    color:#bbb;
-    margin-bottom:10px;
+.footer-column h3{
+    position:relative;
+    color:#ffffff;
+    font-size:18px;
+    margin-bottom:24px;
+    padding-bottom:10px;
 }
 
-footer a{
+.footer-column h3::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:35px;
+    height:2px;
+    border-radius:2px;
+    background:#0f858a;
+}
+
+.footer-column > a{
     display:block;
-    color:#ddd;
+    width:max-content;
+    max-width:100%;
+    color:#c8c8c8;
     text-decoration:none;
-    margin-bottom:10px;
+    font-size:15px;
+    margin-bottom:12px;
+    transition:.3s ease;
 }
 
-footer a:hover{
-    color:#0f6f73;
+.footer-column > a:hover{
+    color:#ffffff;
+    transform:translateX(4px);
 }
 
-.copyright{
-    text-align:center;
-    margin-top:40px;
+.footer-social-icons{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.footer-social-icons a{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(255,255,255,.18);
+    color:#ffffff;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s ease;
+}
+
+.footer-social-icons a:hover{
+    background:#0f858a;
+    border-color:#0f858a;
+    transform:translateY(-3px);
+}
+
+.footer-contact-link{
+    display:flex !important;
+    align-items:flex-start;
+    gap:9px;
+    width:100% !important;
+    margin-top:15px;
+    line-height:1.5;
+}
+
+.footer-contact-link i{
+    color:#18a1a6;
+    margin-top:4px;
+    flex-shrink:0;
+}
+
+.footer-bottom{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
     padding-top:20px;
-    border-top:1px solid rgba(255,255,255,.15);
-    color:#888;
+    padding-bottom:20px;
+    border-top:1px solid rgba(255,255,255,.12);
+}
+
+.footer-bottom p{
+    color:#909090;
+    font-size:14px;
+    margin:0;
+}
+
+.footer-heart{
+    color:#e65353;
 }
 
 /* WhatsApp Button */
@@ -767,9 +841,16 @@ nav .header-shop-btn{
         text-align:center;
     }
 
-    .footer-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-    }
+   .footer-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:40px;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    text-align:center;
+    gap:5px;
+}
 }
 
 /* Small Mobile */
@@ -840,4 +921,31 @@ nav .header-shop-btn{
         height:52px;
         font-size:26px;
     }
+
+.footer-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.site-footer{
+    padding-top:50px;
+}
+
+.footer-brand p{
+    max-width:100%;
+}
+
+.footer-logo{
+    width:165px;
+}
+
+.footer-bottom{
+    padding-top:18px;
+    padding-bottom:18px;
+}
+
+.footer-bottom p{
+    font-size:13px;
+}
+    
 }
