@@ -107,22 +107,102 @@
 
     <div class="container nav">
 
-      <div class="logo">
-    <a href="#">
-        <img src="assets/images/logo/logo.png" alt="DecorWe Logo">
-    </a>
-</div>
-<div class="menu-toggle" id="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-</div>
-        <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo/logo.png" alt="DecorWe Logo">
+            </a>
+        </div>
 
-            <a href="#home">Home</a>
-            <a href="#categories">Categories</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#contact">Contact</a>
+        <button class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="main-nav">
+
+            <a href="index.html#home">Home</a>
+
+            <div class="nav-dropdown">
+
+                <button class="dropdown-toggle"
+                        type="button"
+                        aria-expanded="false">
+
+                    Categories
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="dropdown-menu">
+
+                    <a href="index.html#categories">
+                        <i class="fa-solid fa-image"></i>
+                        Wall Art
+                    </a>
+
+                    <a href="index.html#categories">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Night Lamps
+                    </a>
+
+                    <a href="index.html#categories">
+                        <i class="fa-regular fa-clock"></i>
+                        Wall Clocks
+                    </a>
+
+                    <a href="index.html#categories">
+                        <i class="fa-solid fa-om"></i>
+                        Religious Decor
+                    </a>
+
+                    <a href="index.html#categories">
+                        <i class="fa-regular fa-images"></i>
+                        Photo Frames
+                    </a>
+
+                    <a href="index.html#categories">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        Desktop Organizers
+                    </a>
+
+                    <a href="index.html#categories">
+                        <i class="fa-solid fa-fire-flame-simple"></i>
+                        Scented Candles
+                    </a>
+
+                    <a href="index.html#categories">
+                        <i class="fa-solid fa-gift"></i>
+                        Personalized Gifts
+                    </a>
+
+                    <a href="index.html#categories">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                        Kids Decor
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="about.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+
+            <!-- Hero section me jo Amazon Store link laga hai,
+                 wahi link neeche href me paste karein. -->
+
+            <a href="#"
+               class="header-shop-btn"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+                Shop on Amazon
+
+            </a>
 
         </nav>
 
