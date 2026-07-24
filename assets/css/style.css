@@ -448,6 +448,97 @@ nav .header-shop-btn:hover{
     line-height:1.8;
 }
 
+/* DecorWe Mission Section */
+
+.dw-mission-section{
+    padding:95px 0;
+    background:#f6faf9;
+}
+
+.dw-mission-container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.dw-mission-heading{
+    max-width:760px;
+    margin:0 auto 52px;
+    text-align:center;
+}
+
+.dw-mission-label{
+    display:inline-block;
+    margin-bottom:14px;
+    color:#087f87;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.dw-mission-heading h2{
+    margin:0 0 20px;
+    color:#111827;
+    font-size:42px;
+    line-height:1.25;
+}
+
+.dw-mission-heading p{
+    max-width:680px;
+    margin:0 auto;
+    color:#626b70;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.dw-mission-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:28px;
+}
+
+.dw-mission-card{
+    padding:38px 30px;
+    background:#ffffff;
+    border:1px solid #e5eeee;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(16,60,64,.06);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.dw-mission-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 20px 45px rgba(16,60,64,.11);
+}
+
+.dw-mission-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:64px;
+    height:64px;
+    margin:0 auto 24px;
+    border-radius:18px;
+    background:#eaf6f5;
+    color:#087f87;
+    font-size:27px;
+}
+
+.dw-mission-card h3{
+    margin:0 0 14px;
+    color:#111827;
+    font-size:21px;
+    line-height:1.4;
+}
+
+.dw-mission-card p{
+    margin:0;
+    color:#626b70;
+    font-size:15px;
+    line-height:1.75;
+}
+
 /* General Sections */
 
 .section{
@@ -1018,6 +1109,28 @@ nav .header-shop-btn{
     margin-left:auto;
     margin-right:auto;
 }
+
+.dw-mission-section{
+    padding:70px 0;
+}
+
+.dw-mission-heading{
+    margin-bottom:40px;
+}
+
+.dw-mission-heading h2{
+    font-size:34px;
+}
+
+.dw-mission-grid{
+    grid-template-columns:1fr;
+    max-width:680px;
+    margin:0 auto;
+}
+
+.dw-mission-card{
+    padding:32px 28px;
+}
     
 }
 
@@ -1159,6 +1272,58 @@ nav .header-shop-btn{
 .story-text p{
     font-size:15px;
     line-height:1.75;
+}
+
+.dw-mission-section{
+    padding:55px 0;
+}
+
+.dw-mission-container{
+    width:90%;
+}
+
+.dw-mission-heading{
+    margin-bottom:32px;
+}
+
+.dw-mission-label{
+    font-size:11px;
+    letter-spacing:1.7px;
+}
+
+.dw-mission-heading h2{
+    font-size:28px;
+    line-height:1.3;
+}
+
+.dw-mission-heading p{
+    font-size:15px;
+    line-height:1.7;
+}
+
+.dw-mission-grid{
+    gap:18px;
+}
+
+.dw-mission-card{
+    padding:28px 22px;
+    border-radius:17px;
+}
+
+.dw-mission-icon{
+    width:56px;
+    height:56px;
+    margin-bottom:19px;
+    border-radius:15px;
+    font-size:23px;
+}
+
+.dw-mission-card h3{
+    font-size:19px;
+}
+
+.dw-mission-card p{
+    font-size:14px;
 }
     
 }
