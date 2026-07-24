@@ -917,10 +917,9 @@ nav .header-shop-btn{
     }
 
     .about-content{
-        flex-direction:column;
-        gap:30px;
-    }
-
+    grid-template-columns:1fr;
+    gap:35px;
+}
     .about-text,
     .about-text h2{
         text-align:center;
