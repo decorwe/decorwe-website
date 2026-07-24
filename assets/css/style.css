@@ -643,6 +643,108 @@ nav .header-shop-btn:hover{
     line-height:1.75;
 }
 
+/* Why Choose DecorWe Section */
+
+.dw-choose-section{
+    padding:95px 0;
+    background:#f6faf9;
+}
+
+.dw-choose-container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.dw-choose-heading{
+    max-width:780px;
+    margin:0 auto 55px;
+    text-align:center;
+}
+
+.dw-choose-label{
+    display:inline-block;
+    margin-bottom:14px;
+    color:#087f87;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.dw-choose-heading h2{
+    margin:0 0 20px;
+    color:#111827;
+    font-size:42px;
+    line-height:1.25;
+}
+
+.dw-choose-heading p{
+    max-width:700px;
+    margin:0 auto;
+    color:#626b70;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.dw-choose-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:26px;
+}
+
+.dw-choose-item{
+    position:relative;
+    display:grid;
+    grid-template-columns:72px minmax(0,1fr);
+    gap:24px;
+    padding:32px;
+    overflow:hidden;
+    background:#ffffff;
+    border:1px solid #e4eeee;
+    border-radius:20px;
+    box-shadow:0 12px 34px rgba(16,60,64,.06);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.dw-choose-item:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(16,60,64,.11);
+}
+
+.dw-choose-number{
+    color:#d7e8e7;
+    font-size:38px;
+    font-weight:700;
+    line-height:1;
+}
+
+.dw-choose-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:52px;
+    height:52px;
+    margin-bottom:18px;
+    border-radius:15px;
+    background:#eaf6f5;
+    color:#087f87;
+    font-size:21px;
+}
+
+.dw-choose-content h3{
+    margin:0 0 12px;
+    color:#111827;
+    font-size:21px;
+    line-height:1.4;
+}
+
+.dw-choose-content p{
+    margin:0;
+    color:#626b70;
+    font-size:15px;
+    line-height:1.75;
+}
+
 /* General Sections */
 
 .section{
@@ -1252,6 +1354,24 @@ nav .header-shop-btn{
     grid-template-columns:repeat(2,minmax(0,1fr));
     gap:22px;
 }
+
+.dw-choose-section{
+    padding:70px 0;
+}
+
+.dw-choose-heading{
+    margin-bottom:40px;
+}
+
+.dw-choose-heading h2{
+    font-size:34px;
+}
+
+.dw-choose-grid{
+    grid-template-columns:1fr;
+    max-width:720px;
+    margin:0 auto;
+}
     
 }
 
@@ -1497,6 +1617,64 @@ nav .header-shop-btn{
 }
 
 .dw-values-card p{
+    font-size:14px;
+}
+
+.dw-choose-section{
+    padding:55px 0;
+}
+
+.dw-choose-container{
+    width:90%;
+}
+
+.dw-choose-heading{
+    margin-bottom:32px;
+}
+
+.dw-choose-label{
+    font-size:11px;
+    letter-spacing:1.7px;
+}
+
+.dw-choose-heading h2{
+    font-size:28px;
+    line-height:1.3;
+}
+
+.dw-choose-heading p{
+    font-size:15px;
+    line-height:1.7;
+}
+
+.dw-choose-grid{
+    gap:18px;
+}
+
+.dw-choose-item{
+    grid-template-columns:1fr;
+    gap:12px;
+    padding:27px 22px;
+    text-align:center;
+    border-radius:17px;
+}
+
+.dw-choose-number{
+    font-size:30px;
+}
+
+.dw-choose-icon{
+    width:52px;
+    height:52px;
+    margin:0 auto 17px;
+    font-size:21px;
+}
+
+.dw-choose-content h3{
+    font-size:19px;
+}
+
+.dw-choose-content p{
     font-size:14px;
 }
     
