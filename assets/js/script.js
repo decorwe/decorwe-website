@@ -17,17 +17,21 @@ menuToggle.addEventListener("click", function () {
 
 });
 
-// Categories Dropdown
+// Categories Dropdown Arrow
 
 dropdownToggle.addEventListener("click", function (e) {
 
+    e.preventDefault();
     e.stopPropagation();
 
     navDropdown.classList.toggle("active");
 
+    const dropdownIsOpen =
+        navDropdown.classList.contains("active");
+
     dropdownToggle.setAttribute(
         "aria-expanded",
-        navDropdown.classList.contains("active")
+        dropdownIsOpen
     );
 
 });
@@ -40,20 +44,28 @@ document.addEventListener("click", function (e) {
 
         navDropdown.classList.remove("active");
 
-        dropdownToggle.setAttribute("aria-expanded", "false");
+        dropdownToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
 
     }
 
 });
 
-// Close Mobile Menu
+// Close Mobile Menu After Link Click
 
-mainNav.querySelectorAll("a").forEach(function(link){
+mainNav.querySelectorAll("a").forEach(function (link) {
 
-    link.addEventListener("click", function(){
+    link.addEventListener("click", function () {
 
         mainNav.classList.remove("active");
         navDropdown.classList.remove("active");
+
+        dropdownToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
 
         menuIcon.classList.add("fa-bars");
         menuIcon.classList.remove("fa-xmark");
@@ -62,14 +74,19 @@ mainNav.querySelectorAll("a").forEach(function(link){
 
 });
 
-// Resize
+// Reset Navigation on Resize
 
-window.addEventListener("resize", function(){
+window.addEventListener("resize", function () {
 
-    if(window.innerWidth > 900){
+    if (window.innerWidth > 900) {
 
         mainNav.classList.remove("active");
         navDropdown.classList.remove("active");
+
+        dropdownToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
 
         menuIcon.classList.add("fa-bars");
         menuIcon.classList.remove("fa-xmark");
