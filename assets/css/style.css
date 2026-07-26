@@ -179,6 +179,46 @@ nav > a:not(.header-shop-btn):hover::after,
     transform:rotate(180deg);
 }
 
+.categories-page-link{
+    color:#222222;
+    font-size:15px;
+    font-weight:400;
+    text-decoration:none;
+}
+
+.categories-page-link:visited{
+    color:#222222;
+}
+
+.categories-page-link:hover{
+    color:#087f87;
+}
+
+.dropdown-heading{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+}
+
+.dropdown-heading .dropdown-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:3px;
+    margin:0;
+    color:#222222;
+    background:transparent;
+    border:none;
+    line-height:1;
+    cursor:pointer;
+}
+
+.dropdown-heading .dropdown-toggle i{
+    display:block;
+    font-size:10px;
+}
+
 /* Categories Dropdown */
 
 .nav-dropdown{
@@ -1723,6 +1763,7 @@ nav .header-shop-btn:hover{
     display:flex;
     align-items:center;
     justify-content:center;
+     transform:translateX(-15px);
 }
 
 .dw-categories-hero-circle{
