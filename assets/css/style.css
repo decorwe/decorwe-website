@@ -141,6 +141,44 @@ nav > a:not(.header-shop-btn):hover::after,
     width:100%;
 }
 
+.dropdown-heading{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+}
+
+.categories-page-link{
+    color:#222;
+    font-size:15px;
+    font-weight:400;
+    text-decoration:none;
+}
+
+.categories-page-link:hover{
+    color:#087f87;
+}
+
+.dropdown-heading .dropdown-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:4px;
+    color:#222;
+    background:transparent;
+    border:none;
+    cursor:pointer;
+}
+
+.dropdown-heading .dropdown-toggle i{
+    font-size:11px;
+    transition:transform .3s ease;
+}
+
+.nav-dropdown.active .dropdown-toggle i{
+    transform:rotate(180deg);
+}
+
 /* Categories Dropdown */
 
 .nav-dropdown{
