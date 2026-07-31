@@ -2702,6 +2702,17 @@ nav .header-shop-btn{
     justify-self:center;
 }
 
+.dw-categories-hero-image{
+    width:100%;
+    max-width:700px;
+    margin:0 auto;
+}
+
+.dw-categories-hero-image img{
+    height:400px;
+}
+
+
 /* =====================================
    ALL CATEGORIES - TABLET
 ===================================== */
@@ -3436,6 +3447,11 @@ nav .header-shop-btn{
 
 .dw-center-card h3{
     font-size:17px;
+}
+
+.dw-categories-hero-image img{
+    height:280px;
+    border-radius:18px;
 }
 
 /* =====================================
