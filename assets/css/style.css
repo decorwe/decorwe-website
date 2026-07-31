@@ -1728,131 +1728,21 @@ nav .header-shop-btn:hover{
     transform:translateY(3px);
 }
 
-/* Hero Visual */
+/* Categories Hero Image */
 
-.dw-categories-hero-visual{
-    position:relative;
-    min-height:470px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-     transform:translateX(-15px);
+.dw-categories-hero-image{
+    width:100%;
+    min-width:0;
 }
 
-.dw-categories-hero-circle{
-    position:absolute;
-    width:390px;
-    height:390px;
-    border-radius:50%;
-    background:linear-gradient(145deg, #d8eeee, #c9e5e4);
-    box-shadow:inset 0 0 0 1px rgba(8,127,135,.08);
-}
-
-.dw-categories-hero-circle::before{
-    content:"";
-    position:absolute;
-    top:42px;
-    left:42px;
-    right:42px;
-    bottom:42px;
-    border:1px dashed rgba(8,127,135,.25);
-    border-radius:50%;
-}
-
-.dw-categories-hero-center{
-    position:relative;
-    z-index:3;
-    width:220px;
-    min-height:205px;
-    padding:35px 24px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    background:#ffffff;
-    border:1px solid rgba(8,127,135,.13);
+.dw-categories-hero-image img{
+    display:block;
+    width:100%;
+    height:430px;
+    object-fit:cover;
+    object-position:center;
     border-radius:24px;
-    box-shadow:0 22px 45px rgba(23,76,80,.14);
-}
-
-.dw-categories-hero-center i{
-    width:58px;
-    height:58px;
-    margin-bottom:17px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#ffffff;
-    background:#087f87;
-    border-radius:18px;
-    font-size:24px;
-}
-
-.dw-categories-hero-center strong{
-    color:#101b28;
-    font-size:18px;
-    line-height:1.4;
-}
-
-.dw-categories-hero-center span{
-    margin-top:7px;
-    color:#6b7477;
-    font-size:13px;
-}
-
-.dw-categories-hero-card{
-    position:absolute;
-    z-index:4;
-    min-width:150px;
-    padding:14px 17px;
-    display:flex;
-    align-items:center;
-    gap:11px;
-    background:rgba(255,255,255,.96);
-    border:1px solid rgba(8,127,135,.13);
-    border-radius:14px;
-    box-shadow:0 13px 30px rgba(30,76,80,.13);
-}
-
-.dw-categories-hero-card i{
-    width:35px;
-    height:35px;
-    flex-shrink:0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#087f87;
-    background:#e9f6f5;
-    border-radius:10px;
-    font-size:15px;
-}
-
-.dw-categories-hero-card span{
-    color:#273236;
-    font-size:14px;
-    font-weight:600;
-    white-space:nowrap;
-}
-
-.dw-categories-hero-card-one{
-    top:55px;
-    left:10px;
-}
-
-.dw-categories-hero-card-two{
-    top:90px;
-    right:0;
-}
-
-.dw-categories-hero-card-three{
-    bottom:75px;
-    left:0;
-}
-
-.dw-categories-hero-card-four{
-    right:-5px;
-    bottom:45px;
+    box-shadow:0 22px 55px rgba(25,65,66,.14);
 }
 
 /* =====================================
