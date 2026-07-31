@@ -1911,6 +1911,156 @@ nav .header-shop-btn:hover{
     transform:translateX(4px);
 }
 
+/* =====================================
+   STYLE YOUR SPACE
+===================================== */
+
+.dw-style-space{
+    padding:90px 0;
+    background:#f6faf9;
+}
+
+.dw-style-heading{
+    max-width:720px;
+    margin:0 auto 45px;
+    text-align:center;
+}
+
+.dw-style-heading > span{
+    display:inline-block;
+    margin-bottom:10px;
+    color:#0f6f73;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1.5px;
+}
+
+.dw-style-heading h2{
+    margin:0 0 14px;
+    color:#1f2929;
+    font-size:40px;
+    line-height:1.2;
+}
+
+.dw-style-heading p{
+    margin:0;
+    color:#667171;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.dw-style-grid{
+    display:grid;
+    grid-template-columns:1.25fr .75fr .75fr;
+    grid-template-rows:repeat(2, 250px);
+    gap:22px;
+}
+
+.dw-style-card{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    min-width:0;
+    color:#ffffff;
+    background:#dfe7e6;
+    border-radius:22px;
+    text-decoration:none;
+    box-shadow:0 14px 35px rgba(25,65,66,.11);
+}
+
+.dw-style-large{
+    grid-row:1 / span 2;
+}
+
+.dw-style-card img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    transition:transform .6s ease;
+}
+
+.dw-style-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(6,20,21,.78) 0%,
+        rgba(6,20,21,.25) 52%,
+        transparent 78%
+    );
+    transition:background .35s ease;
+}
+
+.dw-style-card:hover img{
+    transform:scale(1.06);
+}
+
+.dw-style-card:hover::after{
+    background:linear-gradient(
+        to top,
+        rgba(6,20,21,.84) 0%,
+        rgba(6,20,21,.32) 58%,
+        transparent 82%
+    );
+}
+
+.dw-style-overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:2;
+    padding:28px;
+}
+
+.dw-style-overlay > span{
+    display:inline-block;
+    margin-bottom:8px;
+    color:#d6f3f0;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+}
+
+.dw-style-overlay h3{
+    margin:0;
+    color:#ffffff;
+    font-size:24px;
+    line-height:1.25;
+}
+
+.dw-style-large .dw-style-overlay{
+    padding:36px;
+}
+
+.dw-style-large .dw-style-overlay h3{
+    max-width:430px;
+    font-size:34px;
+}
+
+.dw-style-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:18px;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:600;
+}
+
+.dw-style-btn i{
+    font-size:12px;
+    transition:transform .3s ease;
+}
+
+.dw-style-card:hover .dw-style-btn i{
+    transform:translateX(5px);
+}
+
 /* General Sections */
 
 .section{
@@ -2739,6 +2889,42 @@ nav .header-shop-btn{
 .dw-category-image-content h3{
     font-size:18px;
 }
+
+/* =====================================
+   STYLE YOUR SPACE - TABLET
+===================================== */
+
+.dw-style-space{
+    padding:70px 0;
+}
+
+.dw-style-heading{
+    margin-bottom:36px;
+}
+
+.dw-style-heading h2{
+    font-size:34px;
+}
+
+.dw-style-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    grid-template-rows:none;
+    gap:20px;
+}
+
+.dw-style-large{
+    grid-column:1 / -1;
+    grid-row:auto;
+    height:400px;
+}
+
+.dw-style-card:not(.dw-style-large){
+    height:260px;
+}
+
+.dw-style-large .dw-style-overlay h3{
+    font-size:30px;
+}
     
 }
 
@@ -3500,6 +3686,62 @@ nav .header-shop-btn{
 
 .dw-category-image-content span{
     font-size:11px;
+}
+
+/* =====================================
+   STYLE YOUR SPACE - MOBILE
+===================================== */
+
+.dw-style-space{
+    padding:55px 0;
+}
+
+.dw-style-heading{
+    margin-bottom:30px;
+}
+
+.dw-style-heading > span{
+    font-size:11px;
+    letter-spacing:1.2px;
+}
+
+.dw-style-heading h2{
+    font-size:30px;
+}
+
+.dw-style-heading p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+.dw-style-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+}
+
+.dw-style-large,
+.dw-style-card:not(.dw-style-large){
+    width:100%;
+    height:280px;
+}
+
+.dw-style-card{
+    border-radius:17px;
+}
+
+.dw-style-overlay,
+.dw-style-large .dw-style-overlay{
+    padding:22px;
+}
+
+.dw-style-overlay h3,
+.dw-style-large .dw-style-overlay h3{
+    font-size:23px;
+}
+
+.dw-style-btn{
+    margin-top:14px;
+    font-size:13px;
 }
     
 }
